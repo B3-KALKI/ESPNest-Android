@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--
+      ESP32 panels almost always speak HTTP on a local subnet.
+      Android <domain> tags are hostnames, not CIDR, so RFC1918 ranges
+      (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) plus loopback are
+      permitted via base-config. Manifest also sets usesCleartextTraffic.
+    -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="false">127.0.0.1</domain>
+    </domain-config>
+</network-security-config>

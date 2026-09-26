@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer hexagon — ESP32 chip silhouette, steel on near-black. -->
+    <path
+        android:fillColor="#8BA3AE"
+        android:pathData="M54,24 L81.5,39.9 L81.5,71.7 L54,87.6 L26.5,71.7 L26.5,39.9 Z" />
+
+    <!-- Nested hexagon cut, same family as the in-app mark. -->
+    <path
+        android:fillColor="#111114"
+        android:pathData="M54,36.5 L71.2,46.4 L71.2,66.2 L54,76.1 L36.8,66.2 L36.8,46.4 Z" />
+
+    <!-- Inner core. -->
+    <path
+        android:fillColor="#C5D4DA"
+        android:pathData="M54,46.5 L62.1,51.2 L62.1,60.6 L54,65.3 L45.9,60.6 L45.9,51.2 Z" />
+
+    <!-- Radio arcs: two subtle rings off the top-right vertex. -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8BA3AE"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round"
+        android:pathData="M78,32.5 C82.4,36.9 85,42.9 85,49.5" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#8BA3AE"
+        android:strokeWidth="2.0"
+        android:strokeLineCap="round"
+        android:pathData="M83,27.5 C89.2,33.7 93,42.1 93,51.2" />
+</vector>
